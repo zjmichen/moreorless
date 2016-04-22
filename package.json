@@ -1,9 +1,11 @@
 {
   "name": "moreorless",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Concatenates and compiles LESS files",
   "main": "index.js",
-  "bin": { "moreorless": "./bin/moreorless.js" },
+  "bin": {
+    "moreorless": "./bin/moreorless.js"
+  },
   "scripts": {
     "test": "mocha"
   },
