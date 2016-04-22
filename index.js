@@ -6,7 +6,7 @@ var watch = require('watch');
 function watch(sources, outfile, onCompile) {
   console.info('Watching ' + sources);
   watch.watchTree(sources, function() {
-    compile(sources, program.output, onCompile);
+    compile(sources, outfile, onCompile);
   });
 }
 

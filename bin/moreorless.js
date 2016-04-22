@@ -14,12 +14,12 @@ program
   .parse(process.argv);
 
 if (program.watch) {
-  moreorless.watch(sources, outfile, report);
+  moreorless.watch(sources, program.output, report);
 } else {
   moreorless.compile(sources, program.output, report);
 }
 
 function report(err, elapsed) {
   if (err) console.error(err);
-  else console.info('Built ' + outfile + ' in ' + elapsed + 'ms');  
+  else console.info('Built ' + program.output + ' in ' + elapsed + 'ms');  
 }
