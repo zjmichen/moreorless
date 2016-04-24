@@ -1,6 +1,6 @@
 {
   "name": "moreorless",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Concatenates and compiles LESS files",
   "main": "index.js",
   "bin": {
